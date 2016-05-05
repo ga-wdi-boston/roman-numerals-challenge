@@ -35,25 +35,34 @@ cloning](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone).
 ## Requirements
 
 In either Ruby or JavaScript, implement `arabic_to_roman` (`arabicToRoman` in
- JavaScript), a method/function that converts arabic numbers to roman numerals.
-Then, once you've successfully met requirements in your language of choice,
+ JavaScript), a method/function that converts arabic numbers to strings of
+ characters representing roman numerals.
+It's worth noting that in roman numerals, there is no way to represent either
+ zero, negative numbers, or fractions, so if the input is any of these (or any
+ other obviously invalid input), `arabic_to_roman` should return `null`/`nil`.
+
+Once you've successfully met all requirements in your language of choice,
  implement that same solution in Python.
 
 You should be running the appropriate linter before diagnosing any bugs, since
  linters find some of the most common sources of errors.
-After your linter passes, you should run the appropriate test command to run the
- included tests.
+After your linter passes, you should run the corresponding test command to run
+ the included tests.
 Tests will tell you whether of not you've met these requirements.
 
 ## Bonus
 
 Once you've implemented `arabic_to_roman`, implement the inverse method,
- `roman_to_arabic`, in the language of your choice.
+ `roman_to_arabic`, in either Ruby of JavaScript.
+As with `arabic_to_roman`, you'll need to do some input validation --
+ if your receive any strings that don't follow the rules of roman numerals
+ (e.g. no more than three of the same character in a row) or are otherwise
+ obviously invalid, return `null`/`nil`.
+Also: be sure to set `xdescribe` to `describe` in your test file, so that
+ the tests for `roman_to_arabic` will also run.
 
-In the appropriate test file, set `xdescribe` to `describe` so that the test
- file will evaluate this method as well.
-Then, do this process again in Python, un-hiding the appropriate tests in
- challenge_spec.py.
+Finally, do this process again in Python, un-hiding the appropriate tests in
+ `challenge_spec.py`.
 
 ## [License](LICENSE)
 
