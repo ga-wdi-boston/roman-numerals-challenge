@@ -9,9 +9,9 @@ describe('Challenge: ', () => {
     console.log(romanNumerals);
 
     it(`produces simple roman numerals`, () => {
-      [ [3,'III'],
-        [20,'XX'],
-        [100,'C']].forEach((pair)=>{
+      [ [3, 'III'],
+        [20, 'XX'],
+        [100, 'C']].forEach((pair)=>{
         let arabic = pair[0];
         let roman = pair[1];
         expect(arabicToRoman(arabic)).toEqual(roman);
@@ -45,9 +45,9 @@ describe('Challenge: ', () => {
     const romanToArabic = romanNumerals.romanToArabic;
 
     it(`handles simple roman numerals`, () => {
-      [ [3,'III'],
-        [20,'XX'],
-        [100,'C']].forEach((pair)=>{
+      [ [3, 'III'],
+        [20, 'XX'],
+        [100, 'C']].forEach((pair)=>{
         let arabic = pair[0];
         let roman = pair[1];
         expect(romanToArabic(roman)).toEqual(arabic);
