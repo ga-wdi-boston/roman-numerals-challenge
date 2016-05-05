@@ -4,7 +4,7 @@ RSpec.describe "Challenge: " do
 
   describe 'arabic_to_roman' do
     it 'produces simple roman numerals' do
-      [3,20,100]
+      [3, 20, 100]
       .zip(['III','XX','C'])
       .each do | arabic, roman |
         expect(arabic_to_roman(arabic)).to eql(roman);
@@ -20,7 +20,7 @@ RSpec.describe "Challenge: " do
     end
 
     it 'produces subtractive roman numerals' do
-      [4,9,99,405]
+      [4, 9, 99, 405]
       .zip(['IV','IX','XCIX','CDV'])
       .each do | arabic, roman |
         expect(arabic_to_roman(arabic)).to eql(roman);
@@ -30,7 +30,7 @@ RSpec.describe "Challenge: " do
 
   xdescribe 'roman_to_arabic' do
     it 'converts simple roman numerals into arabic numbers' do
-      [3,20,100]
+      [3, 20, 100]
       .zip(['III','XX','C'])
       .each do | arabic, roman |
         expect(roman_to_arabic(roman)).to eql(arabic);
@@ -46,7 +46,7 @@ RSpec.describe "Challenge: " do
     end
 
     it 'converts subtractive roman numerals into arabic numbers' do
-      [4,9,99,405]
+      [4, 9, 99, 405]
       .zip(['IV','IX','XCIX','CDV'])
       .each do | arabic, roman |
         expect(roman_to_arabic(roman)).to eql(arabic);
