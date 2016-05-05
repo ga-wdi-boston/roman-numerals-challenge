@@ -39,6 +39,12 @@ describe('Challenge: ', () => {
         expect(arabicToRoman(arabic)).toEqual(roman);
       });
     });
+
+    it('handles bad input by returning null', () => {
+      [0, 0.5, -1, -0.5, "3", null].forEach((badInput)=>{
+        expect(arabicToRoman(badInput)).toBeNull();
+      });
+    });
   });
 
   xdescribe('romanToArabic', () => {
@@ -73,6 +79,12 @@ describe('Challenge: ', () => {
         let arabic = pair[0];
         let roman = pair[1];
         expect(romanToArabic(roman)).toEqual(arabic);
+      });
+    });
+
+    it('handles bad input by returning null', () => {
+      ["", "F", "IM", "VL", 9, "9", null].forEach((badInput)=>{
+        expect(romanToArabic(badInput)).toBeNull();
       });
     });
   });

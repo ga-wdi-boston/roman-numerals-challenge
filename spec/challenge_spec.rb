@@ -26,6 +26,12 @@ RSpec.describe "Challenge: " do
         expect(arabic_to_roman(arabic)).to eql(roman);
       end
     end
+
+    it 'handles bad input by returning nil' do
+      [0, 0.5, -1, -0.5, "3", nil].each do | bad_input |
+        expect(arabic_to_roman(bad_input)).to be_nil;
+      end
+    end
   end
 
   xdescribe 'roman_to_arabic' do
@@ -50,6 +56,12 @@ RSpec.describe "Challenge: " do
       .zip(['IV', 'IX', 'XCIX', 'CDV'])
       .each do | arabic, roman |
         expect(roman_to_arabic(roman)).to eql(arabic);
+      end
+    end
+
+    it 'handles bad input by returning nil' do
+      ["", "F", "IM", "VL", 9, "9", nil].each do | bad_input |
+        expect(roman_to_arabic(bad_input)).to be_nil;
       end
     end
   end
