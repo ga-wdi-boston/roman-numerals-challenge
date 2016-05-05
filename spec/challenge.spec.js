@@ -2,9 +2,9 @@
 
 const romanNumerals = require('../lib/challenge.js');
 
-describe('challenge', () => {
+describe('Challenge: ', () => {
 
-  describe('Arabic Numbers to Roman Numerals', () => {
+  describe('arabicToRoman', () => {
     const arabicToRoman = romanNumerals.arabicToRoman;
     console.log(romanNumerals);
 
@@ -41,7 +41,7 @@ describe('challenge', () => {
     });
   });
 
-  xdescribe('Roman Numerals to Arabic Numbers', () => {
+  xdescribe('romanToArabic', () => {
     const romanToArabic = romanNumerals.romanToArabic;
 
     it(`handles simple roman numerals`, () => {

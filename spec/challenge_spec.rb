@@ -1,8 +1,8 @@
 require_relative '../lib/challenge.rb'
 
-RSpec.describe "Challenge" do
+RSpec.describe "Challenge: " do
 
-  describe 'Arabic Numbers to Roman Numerals' do
+  describe 'arabic_to_roman' do
     it 'produces simple roman numerals' do
       [ [3,'III'],
         [20,'XX'],
@@ -30,7 +30,7 @@ RSpec.describe "Challenge" do
     end
   end
 
-  xdescribe 'Roman Numerals to Arabic Numbers' do
+  xdescribe 'roman_to_arabic' do
     it 'converts simple roman numerals into arabic numbers' do
       [ [3,'III'],
         [20,'XX'],
