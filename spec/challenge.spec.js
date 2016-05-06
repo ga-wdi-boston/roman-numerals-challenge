@@ -6,7 +6,6 @@ describe('Challenge: ', () => {
 
   describe('arabicToRoman', () => {
     const arabicToRoman = romanNumerals.arabicToRoman;
-    console.log(romanNumerals);
 
     it(`produces simple roman numerals`, () => {
       [ [3, 'III'],
@@ -83,7 +82,7 @@ describe('Challenge: ', () => {
     });
 
     it('handles bad input by returning null', () => {
-      ["", "F", "IM", "VL", 9, "9", null].forEach((badInput)=>{
+      ["", "IIII", "IM", "VL", 9, "9", null].forEach((badInput)=>{
         expect(romanToArabic(badInput)).toBeNull();
       });
     });

@@ -35,5 +35,5 @@ with description('Challenge: '):
                                      ['IV', 'IX', 'XCIX', 'CDV']):
                 expect(roman_to_arabic(roman)).to(equal(arabic))
         with it('handles bad input by returning None'):
-            for badInput in ["", "F", "IM", "VL", 9, "9", None]:
+            for badInput in ["", "IIII", "IM", "VL", 9, "9", None]:
                 expect(roman_to_arabic(badInput)).to(be_none)

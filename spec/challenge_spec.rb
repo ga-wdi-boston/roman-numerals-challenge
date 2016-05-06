@@ -60,7 +60,7 @@ RSpec.describe "Challenge: " do
     end
 
     it 'handles bad input by returning nil' do
-      ["", "F", "IM", "VL", 9, "9", nil].each do | bad_input |
+      ["", "IIII", "IM", "VL", 9, "9", nil].each do | bad_input |
         expect(roman_to_arabic(bad_input)).to be_nil;
       end
     end
