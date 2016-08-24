@@ -50,6 +50,8 @@ After your linter passes, you should run the corresponding test command to run
  the included tests.
 Tests will tell you whether of not you've met these requirements.
 
+You're welcome to view and work on the [original challenge on CodeWars](http://www.codewars.com/kata/51b6249c4612257ac0000005).
+
 ## Bonus
 
 Once you've implemented `arabic_to_roman`, implement the inverse method,
