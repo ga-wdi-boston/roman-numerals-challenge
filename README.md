@@ -13,7 +13,7 @@ Write code to convert back and forth between arabic numerals (e.g. `23`)
 
 1.  Fork and clone this repository.
 1.  Change into the new directory.
-1.  Install all dependencies.
+1.  Install dependencies.
 1.  Create and checkout a new branch to work on.
 1.  Fulfill the listed requirements.
 
@@ -68,5 +68,6 @@ Finally, do this process again in Python, un-hiding the appropriate tests in
 
 ## [License](LICENSE)
 
-Source code distributed under the MIT license. Text and other assets copyright
-General Assembly, Inc., all rights reserved.
+1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
+1.  All software code is licensed under GNU GPLv3. For commercial use or
+    alternative licensing, please contact legal@ga.co.
