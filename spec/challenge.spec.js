@@ -23,7 +23,7 @@ describe('Challenge: ', () => {
         [100, 'C']].forEach((pair)=>{
         let arabic = pair[0];
         let roman = pair[1];
-        expect(arabicToRoman(arabic)).toEqual(roman);
+        expect(arabicToRoman(arabic)).to.equal(roman);
       });
     });
 
@@ -34,7 +34,7 @@ describe('Challenge: ', () => {
         [71, 'LXXI']].forEach((pair)=>{
         let arabic = pair[0];
         let roman = pair[1];
-        expect(arabicToRoman(arabic)).toEqual(roman);
+        expect(arabicToRoman(arabic)).to.equal(roman);
       });
     });
 
@@ -45,7 +45,7 @@ describe('Challenge: ', () => {
         [405, 'CDV']].forEach((pair)=>{
         let arabic = pair[0];
         let roman = pair[1];
-        expect(arabicToRoman(arabic)).toEqual(roman);
+        expect(arabicToRoman(arabic)).to.equal(roman);
       });
     });
 
@@ -65,7 +65,7 @@ describe('Challenge: ', () => {
         [100, 'C']].forEach((pair)=>{
         let arabic = pair[0];
         let roman = pair[1];
-        expect(romanToArabic(roman)).toEqual(arabic);
+        expect(romanToArabic(roman)).to.equal(arabic);
       });
     });
 
@@ -76,7 +76,7 @@ describe('Challenge: ', () => {
         [71, 'LXXI']].forEach((pair)=>{
         let arabic = pair[0];
         let roman = pair[1];
-        expect(romanToArabic(roman)).toEqual(arabic);
+        expect(romanToArabic(roman)).to.equal(arabic);
       });
     });
 
@@ -87,7 +87,7 @@ describe('Challenge: ', () => {
         [405, 'CDV']].forEach((pair)=>{
         let arabic = pair[0];
         let roman = pair[1];
-        expect(romanToArabic(roman)).toEqual(arabic);
+        expect(romanToArabic(roman)).to.equal(arabic);
       });
     });
 
