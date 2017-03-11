@@ -48,7 +48,7 @@ You should be running the appropriate linter before diagnosing any bugs, since
  linters find some of the most common sources of errors.
 After your linter passes, you should run the corresponding test command to run
  the included tests.
-Tests will tell you whether of not you've met these requirements.
+Tests will tell you whether or not you've met these requirements.
 
 You're welcome to view and work on the [original challenge on CodeWars](http://www.codewars.com/kata/51b6249c4612257ac0000005).
 
