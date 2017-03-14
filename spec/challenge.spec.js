@@ -51,7 +51,7 @@ describe('Challenge: ', () => {
 
     it('handles bad input by returning null', () => {
       [0, 0.5, -1, -0.5, "3", null].forEach((badInput)=>{
-        expect(arabicToRoman(badInput)).toBeNull();
+        expect(arabicToRoman(badInput)).to.be.null();
       });
     });
   });
