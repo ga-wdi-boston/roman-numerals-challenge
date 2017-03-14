@@ -1,3 +1,4 @@
+# frozen_string_literal:true
 
 def arabic_to_roman(num)
   # Your Code Here

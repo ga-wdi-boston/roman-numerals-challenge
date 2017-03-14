@@ -1,4 +1,5 @@
 require_relative '../lib/challenge.rb'
+# frozen_string_literal:true
 
 RSpec.describe 'Challenge: ' do
   describe 'arabic_to_roman' do
