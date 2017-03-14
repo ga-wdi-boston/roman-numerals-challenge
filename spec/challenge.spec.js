@@ -1,5 +1,15 @@
 'use strict';
 
+// Allow chai syntax like `expect(foo).to.be.ok;`
+// jshint -W030
+
+const chai = require('chai');
+const chaiAsPromised = require('chai-as-promised');
+
+chai.use(chaiAsPromised);
+
+const expect = chai.expect;
+
 const romanNumerals = require('../lib/challenge.js');
 
 describe('Challenge: ', () => {
@@ -13,7 +23,7 @@ describe('Challenge: ', () => {
         [100, 'C']].forEach((pair)=>{
         let arabic = pair[0];
         let roman = pair[1];
-        expect(arabicToRoman(arabic)).toEqual(roman);
+        expect(arabicToRoman(arabic)).to.equal(roman);
       });
     });
 
@@ -24,7 +34,7 @@ describe('Challenge: ', () => {
         [71, 'LXXI']].forEach((pair)=>{
         let arabic = pair[0];
         let roman = pair[1];
-        expect(arabicToRoman(arabic)).toEqual(roman);
+        expect(arabicToRoman(arabic)).to.equal(roman);
       });
     });
 
@@ -35,13 +45,13 @@ describe('Challenge: ', () => {
         [405, 'CDV']].forEach((pair)=>{
         let arabic = pair[0];
         let roman = pair[1];
-        expect(arabicToRoman(arabic)).toEqual(roman);
+        expect(arabicToRoman(arabic)).to.equal(roman);
       });
     });
 
     it('handles bad input by returning null', () => {
       [0, 0.5, -1, -0.5, "3", null].forEach((badInput)=>{
-        expect(arabicToRoman(badInput)).toBeNull();
+        expect(arabicToRoman(badInput)).to.be.null();
       });
     });
   });
@@ -55,7 +65,7 @@ describe('Challenge: ', () => {
         [100, 'C']].forEach((pair)=>{
         let arabic = pair[0];
         let roman = pair[1];
-        expect(romanToArabic(roman)).toEqual(arabic);
+        expect(romanToArabic(roman)).to.equal(arabic);
       });
     });
 
@@ -66,7 +76,7 @@ describe('Challenge: ', () => {
         [71, 'LXXI']].forEach((pair)=>{
         let arabic = pair[0];
         let roman = pair[1];
-        expect(romanToArabic(roman)).toEqual(arabic);
+        expect(romanToArabic(roman)).to.equal(arabic);
       });
     });
 
@@ -77,13 +87,13 @@ describe('Challenge: ', () => {
         [405, 'CDV']].forEach((pair)=>{
         let arabic = pair[0];
         let roman = pair[1];
-        expect(romanToArabic(roman)).toEqual(arabic);
+        expect(romanToArabic(roman)).to.equal(arabic);
       });
     });
 
     it('handles bad input by returning null', () => {
       ["", "IIII", "IM", "VL", 9, "9", null].forEach((badInput)=>{
-        expect(romanToArabic(badInput)).toBeNull();
+        expect(romanToArabic(badInput)).to.be.null();
       });
     });
   });

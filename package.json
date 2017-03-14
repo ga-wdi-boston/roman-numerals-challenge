@@ -1,35 +1,27 @@
 {
   "name": "ga-wdi-boston.roman-numerals-challenge",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": true,
-  "description": "Roman Numerals Challenge",
-  "author": "Matt Brendzel",
-  "license": "MIT",
+  "scripts": {
+    "start": "node bin/index.js"
+  },
+  "license": {
+    "software": "GNU GPLv3",
+    "content": "CC­BY­NC­SA 4.0"
+  },
   "dependencies": {},
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-concurrent": "^2.2.1",
-    "grunt-contrib-jasmine": "^1.0.0",
-    "grunt-contrib-jshint": "^1.0.0",
-    "grunt-jasmine-nodejs": "^1.5.2",
-    "grunt-jsbeautifier": "^0.2.10",
-    "grunt-jscs": "^2.8.0",
-    "grunt-jsonlint": "^1.0.7",
-    "grunt-nodemon": "^0.4.1",
-    "grunt-open": "^0.2.3",
-    "load-grunt-config": "^0.19.1",
-    "time-grunt": "^1.3.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ga-wdi-boston/roman-numerals-challenge.git"
-  },
-  "keywords": [
-    "node",
-    "grunt"
-  ],
-  "bugs": {
-    "url": "https://github.com/ga-wdi-boston/roman-numerals-challenge/issues"
-  },
-  "homepage": "https://github.com/ga-wdi-boston/roman-numerals-challenge#readme"
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "grunt": "^1.0.1",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-jscs": "^3.0.1",
+    "grunt-jsonlint": "^1.1.0",
+    "grunt-mocha-cli": "^3.0.0",
+    "grunt-nodemon": "^0.4.2",
+    "load-grunt-config": "^0.19.2",
+    "mocha": "^3.2.0",
+    "time-grunt": "^1.4.0"
+  }
 }

@@ -2,7 +2,7 @@
 
 # Roman Numeral Challenge
 
-Write code to convert back and forth between arabic numerals (e.g. `23`)
+Write code to convert back and forth between Arabic numerals (e.g. `23`)
   and strings representing [Roman numerals](https://en.wikipedia.org/wiki/Roman_numerals) (e.g. `"XXIII"`).
 
 ## Prerequisites
@@ -13,7 +13,7 @@ Write code to convert back and forth between arabic numerals (e.g. `23`)
 
 1.  Fork and clone this repository.
 1.  Change into the new directory.
-1.  Install all dependencies.
+1.  Install dependencies.
 1.  Create and checkout a new branch to work on.
 1.  Fulfill the listed requirements.
 
@@ -36,8 +36,8 @@ cloning](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone).
 
 In either Ruby or JavaScript, implement `arabic_to_roman` (`arabicToRoman` in
  JavaScript), a method/function that converts arabic numbers to strings of
- characters representing roman numerals.
-It's worth noting that in roman numerals, there is no way to represent either
+ characters representing Roman numerals.
+It's worth noting that in Roman numerals, there is no way to represent either
  zero, negative numbers, or fractions, so if the input is any of these (or any
  other obviously invalid input), `arabic_to_roman` should return `null`/`nil`.
 
@@ -48,16 +48,16 @@ You should be running the appropriate linter before diagnosing any bugs, since
  linters find some of the most common sources of errors.
 After your linter passes, you should run the corresponding test command to run
  the included tests.
-Tests will tell you whether of not you've met these requirements.
+Tests will tell you whether or not you've met these requirements.
 
 You're welcome to view and work on the [original challenge on CodeWars](http://www.codewars.com/kata/51b6249c4612257ac0000005).
 
 ## Bonus
 
 Once you've implemented `arabic_to_roman`, implement the inverse method,
- `roman_to_arabic`, in either Ruby of JavaScript.
+ `roman_to_arabic`, in either Ruby or JavaScript.
 As with `arabic_to_roman`, you'll need to do some input validation --
- if your receive any strings that don't follow the rules of roman numerals
+ if you receive any strings that don't follow the rules of Roman numerals
  (e.g. no more than three of the same character in a row) or are otherwise
  obviously invalid, return `null`/`nil`.
 Also: be sure to set `xdescribe` to `describe` in your test file, so that
@@ -68,5 +68,6 @@ Finally, do this process again in Python, un-hiding the appropriate tests in
 
 ## [License](LICENSE)
 
-Source code distributed under the MIT license. Text and other assets copyright
-General Assembly, Inc., all rights reserved.
+1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
+1.  All software code is licensed under GNU GPLv3. For commercial use or
+    alternative licensing, please contact legal@ga.co.
