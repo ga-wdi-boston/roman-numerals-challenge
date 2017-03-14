@@ -93,7 +93,7 @@ describe('Challenge: ', () => {
 
     it('handles bad input by returning null', () => {
       ["", "IIII", "IM", "VL", 9, "9", null].forEach((badInput)=>{
-        expect(romanToArabic(badInput)).toBeNull();
+        expect(romanToArabic(badInput)).to.be.null();
       });
     });
   });
